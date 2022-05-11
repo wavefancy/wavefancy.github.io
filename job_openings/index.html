@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- ===============================================-->
+  <!--    Document Title-->
+  <!-- ===============================================-->
+    <title>Join us - Wang Lab</title>
+
+  <!-- ===============================================-->
+  <!--    Favicons-->
+  <!-- ===============================================-->
+  
+  
+   
+	  <link rel="apple-touch-icon" sizes="180x180" href="../pages/assets/img/favicons/apple-touch-icon.png">
+	  <link rel="icon" type="image/png" sizes="32x32" href="../pages/assets/img/favicons/favicon-32x32.png">
+	  <link rel="icon" type="image/png" sizes="16x16" href="../pages/assets/img/favicons/favicon-16x16.png ">
+	  <link rel="shortcut icon" type="image/x-icon" href="../pages/assets/img/favicons/favicon.ico">
+	  <link rel="manifest" href="../pages/assets/img/favicons/manifest.json">
+	  <meta name="msapplication-TileImage" content="../pages/assets/img/favicons/mstile-150x150.png">
+	  <meta name="theme-color" content="#ffffff">
+
+	  <!-- ===============================================-->
+	  <!--    Stylesheets-->
+	  <!-- ===============================================-->
+	  <link href="../pages/assets/lib/loaders.css/loaders.min.css" rel="stylesheet">
+	  <!-- <link href="https://fonts.googleapis.com/css?family=PT+Mono%7cPT+Serif:400,400i%7cLato:100,300,400,700,800,900"
+		rel="stylesheet"> -->
+    <link href="../css/fonts/font-face.css"
+		rel="stylesheet">
+	  <link href="../pages/assets/lib/fancybox/jquery.fancybox.min.css" rel="stylesheet">
+	  <link href="../pages/assets/css/theme.css" rel="stylesheet">
+  
+  
+  <style>
+    .btn-outline-primary{
+      cursor: pointer;
+      color: #000;
+      border-color: #000;
+    }
+    .btn-outline-primary:disabled{
+      color: #000;
+      border-color: #000;
+      opacity: .3;
+    }
+    .btn-outline-primary:not(:disabled):hover{
+      background-color: #000;
+      border-color: #000;
+    }
+  </style>
+	<!--This two was missed in base-->
+    <link href="../pages/assets/lib/owl.carousel/owl.carousel.css" rel="stylesheet">
+    <link href="../pages/assets/lib/lightbox2/css/lightbox.min.css" rel="stylesheet">
+
+</head>
+
+<body class="has-sidemenu overflow-hidden-x" onload="initMap()">
+
+  <!--===============================================-->
+  <!--    Fancynav-->
+  <!--===============================================-->
+  <nav class="fancynavbar"
+    data-zanim-lg='{"from":{"opacity":1,"x":70},"to":{"opacity":1,"x":0},"ease":"CubicBezier","duration":0.8,"delay":0.3}'
+    data-zanim-xs='{"from":{"opacity":1,"y":-43},"to":{"opacity":1,"y":0},"ease":"CubicBezier","duration":0.8,"delay":0.3}'
+    data-zanim-trigger="scroll" data-exclusive="true">
+    <div class="fancynavbar-togglerbar bg-black">
+		
+		<a class="fancynavbar-brand" href="/index.html">
+		<img
+          class="fancynavbar-brand-img" src="../wallace/images/imageonline-co-textimage_corben700.png" alt="" width="30" height="30"
+          data-zanim-lg='{"from":{"opacity":0,"x":45},"to":{"opacity":1,"x":0},"ease":"CubicBezier","duration":0.8,"delay":0.4}'
+          data-zanim-trigger="scroll" />
+          
+        <!--You can use icon or text logo as well-->
+        <!--<span class='fab fa-superpowers fs-3'></span>-->
+        <!--<span class='logo-sparrow'>S</span>-->
+      </a>
+      <div class="fancynavbar-toggler"><svg class="fancynavbar-toggler-icon" viewBox="0 0 70 70"
+          xmlns="http://www.w3.org/2000/svg"
+          data-zanim-lg='{"from":{"opacity":0,"x":45},"to":{"opacity":1,"x":0},"ease":"CubicBezier","duration":0.8,"delay":0.5}'
+          data-zanim-trigger="scroll">
+          <path id="path-top" d="M20,25c0,0,22,0,30,0c16,0,18.89,40.71-.15,21.75C38.7,35.65,19.9,16.8,19.9,16.8"></path>
+          <path id="path-middle" d="M20,32h30"></path>
+          <path id="path-bottom" d="M19.9,46.98c0,0,18.8-18.85,29.95-29.95C68.89-1.92,66,38.78,50,38.78c-8,0-30,0-30,0">
+          </path>
+        </svg></div>
+      <div class="fancynavbar-addon"
+        data-zanim-lg='{"from":{"opacity":1,"x":45},"to":{"opacity":1,"x":0},"ease":"CubicBezier","duration":0.8,"delay":0.4}'
+        data-zanim-trigger="scroll">
+        <a class="fancynavbar-addon-item" href="https://twitter.com/wallacemwang?s=11"><span class="fab fa-twitter"></span></a>
+              <a href="#" class="nav-link fancynavbar-addon-item" data-toggle="modal" data-target="#mkdocs_search_modal">
+                  <i class="fa fa-search"></i>
+              </a>
+
+        <!-- <a class="fancynavbar-addon-item" href="#languageModal"
+          data-toggle="modal"><span class="text-sans-serif ls font-weight-black fs--1 d-block">EN</span></a> -->
+        </div>
+    </div>
+    <div class="fancynavbar-collapse">
+      <ul class="fancynavbar-nav">
+        <!-- <li class="fancynav-item"><a class="fancynav-link" href="page-portfolio.html"><span class="fancynav-link-content">portfolio</span></a></li>
+        <li class="fancynav-item"><a class="fancynav-link" href="page-contact.html"><span class="fancynav-link-content">contact</span></a></li> -->
+        
+          
+          
+          <li class=" fancynav-item">
+            <a class="fancynav-link" href="..">
+              <span class="fancynav-link-content">Home</span>
+            </a>
+          </li>
+          
+          
+          
+          <li class=" fancynav-item">
+            <a class="fancynav-link" href="../projects/">
+              <span class="fancynav-link-content">Projects</span>
+            </a>
+          </li>
+          
+          
+          
+          <li class=" fancynav-item">
+            <a class="fancynav-link" href="../discoveries/">
+              <span class="fancynav-link-content">Discoveries</span>
+            </a>
+          </li>
+          
+          
+          
+          <li class=" fancynav-item">
+            <a class="fancynav-link" href="../projects_cn/">
+              <span class="fancynav-link-content">研究方向</span>
+            </a>
+          </li>
+          
+          
+          
+          <li class=" fancynav-item">
+            <a class="fancynav-link" href="../discoveries_cn/">
+              <span class="fancynav-link-content">研究成果</span>
+            </a>
+          </li>
+          
+          
+          
+          <li class=" fancynav-item">
+            <a class="fancynav-link" href="../team/">
+              <span class="fancynav-link-content">Team</span>
+            </a>
+          </li>
+          
+          
+          
+          <li class=" fancynav-item">
+            <a class="fancynav-link" href="../publications/">
+              <span class="fancynav-link-content">Publications</span>
+            </a>
+          </li>
+          
+          
+          
+          <li class=" fancynav-item">
+            <a class="fancynav-link" href="../contact/">
+              <span class="fancynav-link-content">Contact</span>
+            </a>
+          </li>
+          
+          
+          
+          <li class="current fancynav-item">
+            <a class="fancynav-link" href="./">
+              <span class="fancynav-link-content">Join us</span>
+            </a>
+          </li>
+          
+          
+        
+      </ul>
+    </div>
+  </nav>
+  <!--===============================================-->
+  <!--    End of Fancynav-->
+  <!--===============================================-->
+
+
+  <!-- ===============================================-->
+  <!--    Main Content-->
+  <!-- ===============================================-->
+
+  <main class="main min-vh-100" id="top" style="min-height: 97rem !important;">
+    <!-- <section> begin ============================-->
+    
+
+      <!-- ============================================-->
+      <!-- Preloader ==================================-->
+      <div class="preloader" id="preloader">
+        <div class="loader">
+          <div class="line-scale-pulse-out-rapid">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+      </div><!-- ============================================-->
+      <!-- End of Preloader ===========================-->
+
+      <!-- ============================================-->
+      <!-- <section> begin ============================-->
+      <section class="bg-light pt-8 pb-7 pt-lg-6 pb-lg-5 pt-xl-8 pb-xl-5">
+        <div class="container">
+          <div class="row">
+			  	
+            <div class="col-lg-6 col-xl-6">
+              <h1 class="fs-3 fs-sm-3">Openings</h1>
+              <p class="lead mb-2 fs-0">
+				We are always looking for interns, new students, postdocs, and staff scientists to join our highly talented group. If you are highly motivated, creative, and interested in machine learning, statistical genetics, and human medical and population genetics, please reach out.
+              </p>
+              <code>
+                  中国科学院北京基因组研究所（国家生物信息中心）汪敏先研究组因工作需要拟招聘群体遗传学、医学遗传学、统计遗传学、统计学、计算机科学、机器学习大数据、生物信息学或计算生物学背景的助理研究员/副研究员2名、特别研究助理（博士后）3-4名，软件系统工程师1名、科研助理1名。
+              </code>
+            </div>
+          </div>
+        </div><!-- end of .container-->
+      </section><!-- <section> close ============================-->
+      <!-- ============================================-->
+      
+      <!-- ============================================-->
+      <!-- <section> begin ============================-->
+      <section class="py-0">
+        <div class="container">
+          <div class="row justify-content-between">
+            
+            <div class="col-lg-10">
+             
+              <div class="fancy-tab">
+                <div class="nav-bar mt-3">
+                  <div class="nav-bar-item active pl-0" style="font-size:1em;">实验室介绍</div>
+                  <div class="nav-bar-item pl-0 text-left" style="font-size:1em;">副研/助研/博士后</div>
+                  <div class="nav-bar-item pl-0" style="font-size:1em;">软件系统工程师、科研助理</div>
+                </div>
+                <div class="tab-contents pb-7" style="line-height:1.8em;">
+                  <div class="tab-content active">
+                    <p class="fs-0" style="font-size: 1em"><b>一、研究组介绍</b></p>
+                    <p class="fs-0">汪敏先研究员2009年毕业于吉林大学，于2015年获中科院—马普学会计算生物学伙伴研究所计算生物学博士学位，之后师从于美国科学院院士Martin Pollak于哈佛大学医学院（Beth Israel Deaconess Medical Center, Harvard Medical School）从事博士后研究。2018年起就职于Broad Institute of MIT and Harvard，任Computational Biologist，合作导师为Amit V. Khera助理教授 和 Sekar Kathiresan教授。2021年回国加入中科院北京基因组研究所任研究员、博士生导师。现带领研究团队开发、发展及利用统计遗传学、群体遗传学、计算生物学、人群队列大数据及人工智能算法等前沿交叉计算分析算法及工具致力于人类常见复杂疾病的遗传分子机制解析及疾病风险预测。</p>
+                    <p class="fs-0">课题组前期通过分析大规模电子病历、遗传变异及生物医学组学大数据等，系统构建了多种用于遗传诊断、基因发现、疾病风险预测及药物靶标发现与优化等方面的遗传统计模型和方法，并成功应用于大规模实际数据分析，成果丰硕。迄今，已发表SCI论文近30篇，在 NEJM 、JACC、Nat. Comm.、PNAS,、JASN等国际顶级期刊以第一或通讯作者身份发表论文12篇。 研究工作被美国国家人类基因组研究所评为遗传信息用于临床实践领域的十大重要突破之一， 并被 Science等顶级学术期刊及国际知名媒体亮点报道。</p>
+                      <p class="fs-0" style="font-size: 1em"><b>二、课题组主要研究方向</b></p>
+                    <p class="fs-0">
+						<ol>
+							<li>分析大规模人群队列数据、多维组学数据发现疾病风险新基因及新生物标志物，解析疾病遗传分子机制;</li>
+							<li>立足于中国人群生命健康大数据，开发针对中国人群优化适用的疾病风险预测新模型;</li>
+							<li>利用现代云设施，开发安全、高效、可分享的生物医学大数据解析关键云设施与平台;</li>
+							<li>开发遗传统计、机器学习及人工智能新算法解析生物医学大数据;</li>
+                        </ol>
+                    </p>
+                    <p class="fs-0" style="font-size: 1em"><b>三、薪酬待遇</b></p>
+                    <p class="fs-0">
+						<ol>
+							<li>根据竞聘的相应岗位及个人研究背景和经历，参照北京基因组研究所相关规定享受有竞争力的薪酬待遇，优秀者待遇从优;</li>
+							<li>具有优秀研究成果的博士后申请者将推荐申请中国科学院特别研究助理资助项目和国家博士后创新人才计划等;</li>
+							<li>聘期表现优秀者，聘期结束后可获得后续支持、进入事业编制、推荐申请人才项目等;</li>
+							<li>依托课题组成功申请到科研项目的，可提供相应绩效奖励;</li>
+						</ol>
+                    </p>
+                    <p class="fs-0" style="font-size: 1em"><b>四、应聘方式与材料</b></p>
+                    <p class="fs-0">
+						<ol>
+							<li>个人简历及其他能够证明个人能力的电子材料;</li>
+							<li>副研、助研或者博后申请者需额外提交英文Cover letter and Research statement（包括研究陈述，对研究领域的了解、工作设想及未来规划）和代表性论文等相关材料;</li>
+							<li>至少两名推荐人的姓名和联系方式;</li>
+							<li>推荐使用英文申请材料;</li>
+							<li>注明课题组名称与应聘岗位、姓名;</li>
+							<li>同时欢迎实习生加入课题组; </li>
+                        </ol>
+                    </p>
+                    <code>
+                        本招聘启事长期有效，符合应聘条件者均可报名，招满即止。请将上述信息发送至 
+                        
+					  <span>w</span><span>a</span><span>n</span><span>g</span><span>m</span><span>x</span><span>@</span><span>b</span><span>i</span><span>g</span><span>.</span><span>a</span><span>c</span><span>.</span><span>c</span><span>n</span>
+							
+                        。欢迎广大热爱科学研究事业的有志之士加入研究课题组!
+                    </code>
+                  </div>
+                  <div class="tab-content">
+                    <p class="fs-0" style="font-size: 1em"><b>一、岗位要求</b></p>
+                    <p class="fs-0">
+						<ol>
+							<li>具有统计遗传学、计算生物学、生物信息学、群体遗传学、医学遗传学、基因组科学、计算机科学、机器学习大数据、分子流行病学、统计学等数理或生物基础相关专业博士学位;</li>
+							<li>熟悉Linux开发环境及集群计算，并能熟练使用至少一门编程语言（Python/R/Rust/Go/Java/C++/Bash等）。具备编程、数据分析处理及图形化展示的能力;</li>
+							<li>具有二代或三代测序数据分析、GWAS数据分析、遗传统计建模、算法开发、网站数据库开发、高通量生物数据分析、云计算、机器学习或深度学习等相关经验的申请者优先考虑;</li>
+							<li>具备优秀的英文读写能力、沟通交流能力，在SCI期刊以主要作者身份发表过研究论文;</li>
+							<li>品格端正、诚信踏实、责任心强，富有团队精神。热爱科研、科研思路清晰，能够独立开展科学研究工作。有较强的学习能力、沟通能力及动手能力;</li>
+							<li>有创造性、钻研精神、工作主动性强的申请者优先考虑;</li>
+							<li>若应聘助理研究员，具有至少一个聘期的特别研究助理或博士后相关经历；若应聘副研究员，符合我单位副研究员岗位基本任职条件。符合落户条件的优秀申请者，可解决北京户口;</li>
+						</ol>
+					</p>
+                    <p class="fs-0" style="font-size: 1em"><b>二、岗位职责</b></p>
+                    <p class="fs-0">
+						<ol>
+							<li>在研究组长的指导下承担科研任务，开展创新性科学研究;</li>
+							<li>协助研究组长制定研究课题计划、参与科研基金申请及指导研究生;</li>
+							<li>总结撰写科研成果及论文，积极参加学术交流会议及申请大会报告或Poster展示;</li>
+                        </ol>
+                    </p>
+                    <p class="fs-0" style="font-size: 1em"><b>三、其他说明</b></p>
+                    <p class="fs-0">
+                        特别研究助理是指与我单位建立聘用关系且从事科研工作的具有博士学位的非事业编制专业技术人员（含全国博士后管理委员会批准招收的在站博士后人员）。特别优秀的，协助申请“中国科学院特别研究助理资助项目”，入选者给予60万元科研项目资助。
+                    </p>
+                  </div>
+                  <div class="tab-content">
+                    <p class="fs-0" style="font-size: 1em"><b>一、岗位要求</b></p>
+                    <p class="fs-0">
+						<ol>
+							<li>诚信踏实、责任心强，具有较好的组织、沟通、协调能力，富有团队合作精神，有实验室管理工作经验者优先考虑;</li>
+							<li>具有计算机科学、软件工程、统计学、遗传学、计算生物学、生物信息学、医学、基因组科学等数理基础或编程基础相关专业的申请者优先;</li>
+							<li>具有程序开发，网站及数据库开发维护，丰厚编程基础、热爱编程或参加过数学建模竞赛、数学奥林匹克竞赛经验的申请者优先考虑;</li>
+							<li>具有Linux编程开发经验，GNU core utils使用编程经验，或能熟练使用至少一门编程语言（Python/R/Rust/Go/Java/C++/Bash/JavaScript等）申请者优先;</li>
+							<li>获得学士及以上学位;</li>
+                        </ol>
+                    </p>
+                    <p class="fs-0" style="font-size: 1em"><b>二、岗位职责</b></p>
+                    <p class="fs-0">
+						<ol>
+							<li>协助完成科研项目的执行与管理;</li>
+							<li>协助课题组相关网站开发、资源库建设等工作;</li>
+							<li>协助研究组成员完成科研项目预算编制、申报、执行、结题与归档等工作;</li>
+							<li>负责研究组日常行政、财务、人员等事务性工作;</li>
+                        </ol>
+                    </p>
+                  </div>
+                </div>
+              </div>
+             
+          </div>
+        </div><!-- end of .container-->
+      </section><!-- <section> close ============================-->
+      <!-- ============================================-->
+
+
+    
+
+  </main><!-- ===============================================-->
+  <!--    End of Main Content-->
+  <!-- ===============================================-->
+
+
+
+  <!--===============================================-->
+  <!--    Footer-->
+  <!--===============================================-->
+  <footer class="footer bg-black text-600 py-4 text-sans-serif text-center overflow-hidden" data-zanim-timeline="{}"
+    data-zanim-trigger="scroll">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-4 order-lg-2"><a class="indicator indicator-up" href="#top"
+            data-fancyscroll="data-fancyscroll"><span class="indicator-arrow indicator-arrow-one"
+              data-zanim-xs='{"from":{"opacity":0,"y":15},"to":{"opacity":1,"y":-5,"scale":1},"ease":"Back.easeOut","duration":0.4,"delay":0.9}'></span><span
+              class="indicator-arrow indicator-arrow-two"
+              data-zanim-xs='{"from":{"opacity":0,"y":15},"to":{"opacity":1,"y":-5,"scale":1},"ease":"Back.easeOut","duration":0.4,"delay":1.05}'></span></a>
+        </div>
+        <div class="col-lg-4 text-lg-left mt-4 mt-lg-0">
+          <p class="fs--1 text-uppercase ls font-weight-bold mb-0">
+			  Copyright &copy; 2021 Wang Lab <br />
+			  <a href="http://www.big.cas.cn/" target="_blank" class="text-600">@ Beijing Institute of Genomics, CAS.</a>
+			  </p>
+        </div>
+        <div class="col-lg-4 text-lg-right order-lg-2 mt-2 mt-lg-0">
+          <p class="fs--1 text-uppercase ls font-weight-bold mb-0" align="center">Made with<span
+              class="text-danger fas fa-heart mx-1"></span>by <a class="text-600"
+              href="/team/">Wang lab team</a></p>
+            <p class="fs--1 text-uppercase ls font-weight-bold mb-0" align="center">
+				<a href="http://beian.miit.gov.cn/" target="_blank" class="text-600">京ICP备2021031744号</a>				
+			</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!--===============================================-->
+  <!--    Modal for language selection-->
+  <!--===============================================-->
+  <!-- Modal-->
+  <div class="modal fade fade-in" id="languageModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xs mx-auto" role="document">
+      <div class="modal-content bg-black">
+        <div class="modal-body text-center p-0"><button
+            class="close text-white position-absolute t-0 r-0 times-icon mt-2 mr-2 p-2" type="button"
+            data-dismiss="modal" aria-label="Close"></button>
+          <ul class="list-unstyled pl-0 my-0 py-4 text-sans-serif">
+            <li><a class="text-white font-weight-bold pt-1 d-block" href="home-default.html">English</a></li>
+            <li><a class="pt-1 d-block text-500" href="#">Français</a></li>
+            <li><a class="text-500 pt-1 d-block" href="page-rtl.html">عربى</a></li>
+            <li><a class="pt-1 d-block text-500" href="#">Deutsche</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+    <script>
+        var base_url = "..",
+            shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+
+        function jump(e) {
+          let url = e.target.dataset.url;
+          if(!url) return;
+          
+          location.href = url;
+        }
+		
+		// comments out below two by wavefancy@gmail.com
+        //document.getElementById('prev').addEventListener('click',jump);
+        //document.getElementById('next').addEventListener('click',jump);
+    </script>
+    <!--wavefancy@gmail.com-->
+    <!--<script src="../js/base.js" defer></script>-->
+    <script src="../search/main.js" defer></script>
+  <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+  <!-- ===============================================-->
+  <!--    JavaScripts-->
+  <!-- ===============================================-->
+ 
+	  <script src="/pages/assets/js/jquery.min.js"></script>
+	
+	  <script src="/pages/assets/js/bootstrap.js"></script>
+	  <!--plugin is a must have js file-->
+	  <script src="/pages/assets/js/plugins.min.js"></script>
+	  
+	  <script src="/pages/assets/lib/loaders.css/loaders.css.js"></script>
+	  <script src="/pages/assets/js/stickyfill.min.js"></script>
+	  <script src="/pages/assets/lib/is_js/is.min.js"></script>
+	  <script src="/pages/assets/lib/jtap/jquery.tap.js"></script>
+	  <script src="/pages/assets/js/rellax.min.js"></script>
+	  <script src="/pages/assets/lib/fancybox/jquery.fancybox.min.js"></script>
+	  <script src="/pages/assets/lib/isotope-layout/isotope.pkgd.min.js"></script>
+	  <script src="/pages/assets/lib/isotope-packery/packery-mode.pkgd.min.js"></script>
+	  <script src="/pages/assets/js/theme.js"></script>
+	  <!--wavefancy@gmail.com-->
+	  <!--<script src="../js/base.js"></script>-->
+	  <!--
+	  <script src="/pages/assets/js/popper.min.js"></script>
+	  <script src="/pages/assets/lib/lightbox2/js/lightbox.min.js"></script>
+	  <script src="/pages/assets/js/progressbar.min.js"></script>
+	  -->
+	  
+	  <script src="/pages/assets/lib/owl.carousel/owl.carousel.js"></script>
+<!--	  <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.6.15/browser-polyfill.min.js"></script>-->
+	  <script src="/js/browser/browser-polyfill.min.js"></script>
+	  <script src="/pages/assets/js/typed.js"></script>
+	  
+	  <script src="https://map.qq.com/api/gljs?v=1.exp&key=OM5BZ-54JK3-IXD3U-YML7K-TQKZK-RLBNC"></script>
+</body>
+
+</html>

@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- ===============================================-->
+  <!--    Document Title-->
+  <!-- ===============================================-->
+    <title>研究方向 - Wang Lab</title>
+
+  <!-- ===============================================-->
+  <!--    Favicons-->
+  <!-- ===============================================-->
+  
+  
+   
+	  <link rel="apple-touch-icon" sizes="180x180" href="../pages/assets/img/favicons/apple-touch-icon.png">
+	  <link rel="icon" type="image/png" sizes="32x32" href="../pages/assets/img/favicons/favicon-32x32.png">
+	  <link rel="icon" type="image/png" sizes="16x16" href="../pages/assets/img/favicons/favicon-16x16.png ">
+	  <link rel="shortcut icon" type="image/x-icon" href="../pages/assets/img/favicons/favicon.ico">
+	  <link rel="manifest" href="../pages/assets/img/favicons/manifest.json">
+	  <meta name="msapplication-TileImage" content="../pages/assets/img/favicons/mstile-150x150.png">
+	  <meta name="theme-color" content="#ffffff">
+
+	  <!-- ===============================================-->
+	  <!--    Stylesheets-->
+	  <!-- ===============================================-->
+	  <link href="../pages/assets/lib/loaders.css/loaders.min.css" rel="stylesheet">
+	  <!-- <link href="https://fonts.googleapis.com/css?family=PT+Mono%7cPT+Serif:400,400i%7cLato:100,300,400,700,800,900"
+		rel="stylesheet"> -->
+    <link href="../css/fonts/font-face.css"
+		rel="stylesheet">
+	  <link href="../pages/assets/lib/fancybox/jquery.fancybox.min.css" rel="stylesheet">
+	  <link href="../pages/assets/css/theme.css" rel="stylesheet">
+  
+  
+  <style>
+    .btn-outline-primary{
+      cursor: pointer;
+      color: #000;
+      border-color: #000;
+    }
+    .btn-outline-primary:disabled{
+      color: #000;
+      border-color: #000;
+      opacity: .3;
+    }
+    .btn-outline-primary:not(:disabled):hover{
+      background-color: #000;
+      border-color: #000;
+    }
+  </style>
+	<!--This two was missed in base-->
+
+</head>
+
+<body class="has-sidemenu overflow-hidden-x" onload="initMap()">
+
+  <!--===============================================-->
+  <!--    Fancynav-->
+  <!--===============================================-->
+  <nav class="fancynavbar"
+    data-zanim-lg='{"from":{"opacity":1,"x":70},"to":{"opacity":1,"x":0},"ease":"CubicBezier","duration":0.8,"delay":0.3}'
+    data-zanim-xs='{"from":{"opacity":1,"y":-43},"to":{"opacity":1,"y":0},"ease":"CubicBezier","duration":0.8,"delay":0.3}'
+    data-zanim-trigger="scroll" data-exclusive="true">
+    <div class="fancynavbar-togglerbar bg-black">
+		
+		<a class="fancynavbar-brand" href="/index.html">
+		<img
+          class="fancynavbar-brand-img" src="../wallace/images/imageonline-co-textimage_corben700.png" alt="" width="30" height="30"
+          data-zanim-lg='{"from":{"opacity":0,"x":45},"to":{"opacity":1,"x":0},"ease":"CubicBezier","duration":0.8,"delay":0.4}'
+          data-zanim-trigger="scroll" />
+          
+        <!--You can use icon or text logo as well-->
+        <!--<span class='fab fa-superpowers fs-3'></span>-->
+        <!--<span class='logo-sparrow'>S</span>-->
+      </a>
+      <div class="fancynavbar-toggler"><svg class="fancynavbar-toggler-icon" viewBox="0 0 70 70"
+          xmlns="http://www.w3.org/2000/svg"
+          data-zanim-lg='{"from":{"opacity":0,"x":45},"to":{"opacity":1,"x":0},"ease":"CubicBezier","duration":0.8,"delay":0.5}'
+          data-zanim-trigger="scroll">
+          <path id="path-top" d="M20,25c0,0,22,0,30,0c16,0,18.89,40.71-.15,21.75C38.7,35.65,19.9,16.8,19.9,16.8"></path>
+          <path id="path-middle" d="M20,32h30"></path>
+          <path id="path-bottom" d="M19.9,46.98c0,0,18.8-18.85,29.95-29.95C68.89-1.92,66,38.78,50,38.78c-8,0-30,0-30,0">
+          </path>
+        </svg></div>
+      <div class="fancynavbar-addon"
+        data-zanim-lg='{"from":{"opacity":1,"x":45},"to":{"opacity":1,"x":0},"ease":"CubicBezier","duration":0.8,"delay":0.4}'
+        data-zanim-trigger="scroll">
+        <a class="fancynavbar-addon-item" href="https://twitter.com/wallacemwang?s=11"><span class="fab fa-twitter"></span></a>
+              <a href="#" class="nav-link fancynavbar-addon-item" data-toggle="modal" data-target="#mkdocs_search_modal">
+                  <i class="fa fa-search"></i>
+              </a>
+
+        <!-- <a class="fancynavbar-addon-item" href="#languageModal"
+          data-toggle="modal"><span class="text-sans-serif ls font-weight-black fs--1 d-block">EN</span></a> -->
+        </div>
+    </div>
+    <div class="fancynavbar-collapse">
+      <ul class="fancynavbar-nav">
+        <!-- <li class="fancynav-item"><a class="fancynav-link" href="page-portfolio.html"><span class="fancynav-link-content">portfolio</span></a></li>
+        <li class="fancynav-item"><a class="fancynav-link" href="page-contact.html"><span class="fancynav-link-content">contact</span></a></li> -->
+        
+          
+          
+          <li class=" fancynav-item">
+            <a class="fancynav-link" href="..">
+              <span class="fancynav-link-content">Home</span>
+            </a>
+          </li>
+          
+          
+          
+          <li class=" fancynav-item">
+            <a class="fancynav-link" href="../projects/">
+              <span class="fancynav-link-content">Projects</span>
+            </a>
+          </li>
+          
+          
+          
+          <li class=" fancynav-item">
+            <a class="fancynav-link" href="../discoveries/">
+              <span class="fancynav-link-content">Discoveries</span>
+            </a>
+          </li>
+          
+          
+          
+          <li class="current fancynav-item">
+            <a class="fancynav-link" href="./">
+              <span class="fancynav-link-content">研究方向</span>
+            </a>
+          </li>
+          
+          
+          
+          <li class=" fancynav-item">
+            <a class="fancynav-link" href="../discoveries_cn/">
+              <span class="fancynav-link-content">研究成果</span>
+            </a>
+          </li>
+          
+          
+          
+          <li class=" fancynav-item">
+            <a class="fancynav-link" href="../team/">
+              <span class="fancynav-link-content">Team</span>
+            </a>
+          </li>
+          
+          
+          
+          <li class=" fancynav-item">
+            <a class="fancynav-link" href="../publications/">
+              <span class="fancynav-link-content">Publications</span>
+            </a>
+          </li>
+          
+          
+          
+          <li class=" fancynav-item">
+            <a class="fancynav-link" href="../contact/">
+              <span class="fancynav-link-content">Contact</span>
+            </a>
+          </li>
+          
+          
+          
+          <li class=" fancynav-item">
+            <a class="fancynav-link" href="../job_openings/">
+              <span class="fancynav-link-content">Join us</span>
+            </a>
+          </li>
+          
+          
+        
+      </ul>
+    </div>
+  </nav>
+  <!--===============================================-->
+  <!--    End of Fancynav-->
+  <!--===============================================-->
+
+
+  <!-- ===============================================-->
+  <!--    Main Content-->
+  <!-- ===============================================-->
+
+  <main class="main min-vh-100" id="top">
+    <!-- <section> begin ============================-->
+    
+
+      <!-- ============================================-->
+      <!-- Preloader ==================================-->
+      <div class="preloader" id="preloader">
+        <div class="loader">
+          <div class="line-scale-pulse-out-rapid">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+      </div><!-- ============================================-->
+      <!-- End of Preloader ===========================-->
+
+      <!-- ============================================-->
+      <!-- <section> begin ============================-->
+      <section class="border-top border-300" id="default-process">
+        <div class="container">
+          <div class="row justify-content-center text-center mb-6">
+            <div class="col-lg-6">
+              <h2 class="fs-4 text-underline mb-3">研究方向</h2>
+              <p class="text-500 font-italic">
+				We are a group of highly motivated and creative people, discovering and innovating together 
+				to make precision medicine a reality through the catalytic power of big genomic data, 
+				statistical genetics, and artificial intelligence.
+ 				
+			  </p>
+              <hr class="hr-short mt-5 border-300" />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 pl-lg-7">
+              <div class="row align-items-end">
+                <div class="col-lg-6 order-lg-2 text-center pb-sm-2 pb-lg-6"><img class="img-fluid" src="../pages/assets/img/illustration/process-01.svg" alt="" width="400" /></div>
+                <div class="col-lg-6 border-lg-left border-lg-bottom border-300 pb-lg-3 mt-4 mt-lg-0 mb-8 mb-lg-0">
+                  <div class="process-item ml-6 ml-sm-8 ml-lg-6"><span class="process-item-number">01</span>
+                    <h3>疾病风险新基因及新生物标志物发现</h3>
+                    <p>
+						在疾病风险新基因及新生物标识物的发现方面，汪实验室具有专业的遗传数据分析技术，广泛的经验，及扎实的遗传学知识 
+						
+						<i>
+						(Zhang#, <strong>Wang#*</strong> et al. 2018, PNAS;
+						<strong>Wang</strong> et al. 2019, J Am Soc Nephrol; 
+						Chun*, <strong>Wang*</strong> et al. 2020, KI Reports; 
+						Khetarpal*, <strong>Wang*</strong> et al. 2019，N. Engl. J. Med.)。
+						</i>
+						
+						实验室将分析来自大规模人群队列的遗传及电子病历数据用于刻画遗传和表型之间的相关性，这些数据包括但不仅限于大规模的测序数据、基因分型数据、表型图像数据，基因表达量数据，蛋白质组数据，生物标志物以及电子病历数据等。实验室还将基于机器学习推断出相关的中间表型，然后利用这些基于遗传、中间表型以及电子病历等数据中的关联信息打造一个精细的“遗传-表型”关联地图。在该关联地图的帮助下，实验室将对罕见编码突变、非编码调控变异以及这些罕见突变在蛋白结构域中的分布模式及广泛的表型影响进行研究，并结合常见变异关联分析遗传统计定位（genetic statistical fine-mapping）算法，精细定位致病突变以及致病基因，据此精细化分类患病人群，便于精准预防与治疗。利用孟德尔随机化（Mendelian randomization）技术从相关性中理清因果关系，阐明疾病发生发展新机制。最终，实验室的努力将为复杂疾病的发生发展机制提供新的详尽的见解，为精准预防与治疗、临床试验及药物靶标开发等提供帮助。
+
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-6 border-lg-right border-lg-bottom border-300 text-center py-lg-8"><img class="img-fluid" src="../pages/assets/img/illustration/process-04.svg" alt="" width="400" /></div>
+                <div class="col-lg-6 mt-4 mt-lg-0 mb-8 mb-lg-0 my-lg-8">
+                  <div class="process-item ml-6 ml-sm-8 ml-lg-6"><span class="process-item-number">02</span>
+                    <h3>疾病风险预测</h3>
+                    <p>
+						基于本实验室前期关于疾病风险预测的研究基础 
+						<i>
+						(<strong>Wang</strong> et al. 2020 J Am Coll Cardiol.; 
+						Emdin*, Bhatnagar*, <strong>Wang*</strong> et al. 2020, and Dron*, <strong>Wang*</strong> et al. 2021, Circ Genomic Precis Med.; 
+						Patel*, <strong>Wang*</strong> et al. 2020, JAMA network open; 
+						Fahed*, <strong>Wang*</strong>, homburger*, et al. 2020，Nat. Commun)，
+						</i>
+						将继续拓展实验室已有的遗传统计模型，并开发新的人工智能模型用于疾病风险预测。实验室将使用深度学习模型综合来自于遗传、生物标志物、临床图像数据的潜变量及中间表型、基因组注释以及不同疾病之间的相关性等各方面的信息。因此能同时结合先天性的遗传风险以及后天发育及环境中的刺激因素统一联合建模，从而提高的模型的准确性。实验室将会把模型优化重心放在提高模型的可理解性、可解释性、可扩展性、可重复性以及对研究者和临床合作者可使用性和友好性上面。结合实验室与临床合作者多年的合作经验和优势，实验室会继续推动风险预测模型临床转化、用于患者精细化分类和管理。另外，由于现在的风险预测模型多是基于欧洲人的数据，当应用于其他人群的时候会产生严重偏差。因此实验室将结合大规模的中国人群数据，提高模型的可迁移性，以发展出专门针对中国人定制的无偏差统计预测模型，并据此对大规模高风险人群进行主动干预，推进“全民健康”。
+					</p>	
+					</div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-6 order-lg-2 text-center align-self-center"><img class="img-fluid" src="../pages/assets/img/illustration/process-03.svg" alt="" width="400" /></div>
+                <div class="col-lg-6 border-lg-left border-lg-bottom border-300 py-lg-8 mt-4 mt-lg-0 mb-8 mb-lg-0">
+                  <div class="process-item ml-6 ml-sm-8 ml-lg-6"><span class="process-item-number">03</span>
+                    <h3>生物计算服务关键云设施与平台</h3>
+                    <p>
+							随着各种高通量生物医学技术的飞速发展，个人计算机已经无法应对如此海量的数据，甚至对于高性能计算集群（High-Performance Computing clusters）来说也是一种巨大的挑战。
+							例如，来自The Cancer Genome Atlas (TCGA) 项目的数据高达1.2PB（1PB = 1024TB = 1024 x 1024GB）。这些数据更是由多种数据类型所构成，
+							包含全基因组或全外显子测序数据、基因分型数据、基因型缺失推断数据、表观遗传数据、基因表达数据、蛋白质组数据及临床数据等等。
+							传统的将数据分发给各个研究者的模式有多方面的缺陷：1）大规模数据的多重复制导致了存储和计算成本的浪费，2）各个研究者的结果难以分享和复制
+							（主要由于各自采用不同的文件格式和使用的不同的开发环境），3）缺乏细粒度的安全控制管理等等。
+							汪实验室有多年经验使用由Broad Institute领衔开发的一套新的基于云计算的、统一的计算处理系统
+							（
+								<a href="https://app.terra.bio/" target="_blank">Terra platform</a>
+							）
+							。
+							
+							这套系统将旧的“将数据分发给研究者”的模式转变为“将研究者带到数据中来”的模式，从而解决了上述的各种缺陷。基于云系统，将“将研究者带到数据中来”模式，在一个统一、开放、模块化和可分享的虚拟环境中，云基础设施提供精细化的安全控制，因此同一份数据可以授权给多个用户安全访问；在分享研究数据的同时也分享数据处理的流程（pipeline），从而保证分析结果的可重复性。汪实验室将组织和领导专业化团队打造一个类似的云系统，用以将本实验室的数据和结果可重复地分享给科学共同体。相同的模式应用于研究所的数据，势必会吸引广泛的研究者来使用和分享数据，最终提高研究所的曝光度和知名度。同时也希望能为促进中国的大规模生物数据分享贡献实验室微薄的力量。
+					</p>
+					</div>
+                </div>
+              </div>
+              </div>
+          </div>
+        </div><!-- end of .container-->
+      </section><!-- <section> close ============================-->
+      <!-- ============================================-->
+
+
+
+    
+
+  </main><!-- ===============================================-->
+  <!--    End of Main Content-->
+  <!-- ===============================================-->
+
+
+
+  <!--===============================================-->
+  <!--    Footer-->
+  <!--===============================================-->
+  <footer class="footer bg-black text-600 py-4 text-sans-serif text-center overflow-hidden" data-zanim-timeline="{}"
+    data-zanim-trigger="scroll">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-4 order-lg-2"><a class="indicator indicator-up" href="#top"
+            data-fancyscroll="data-fancyscroll"><span class="indicator-arrow indicator-arrow-one"
+              data-zanim-xs='{"from":{"opacity":0,"y":15},"to":{"opacity":1,"y":-5,"scale":1},"ease":"Back.easeOut","duration":0.4,"delay":0.9}'></span><span
+              class="indicator-arrow indicator-arrow-two"
+              data-zanim-xs='{"from":{"opacity":0,"y":15},"to":{"opacity":1,"y":-5,"scale":1},"ease":"Back.easeOut","duration":0.4,"delay":1.05}'></span></a>
+        </div>
+        <div class="col-lg-4 text-lg-left mt-4 mt-lg-0">
+          <p class="fs--1 text-uppercase ls font-weight-bold mb-0">
+			  Copyright &copy; 2021 Wang Lab <br />
+			  <a href="http://www.big.cas.cn/" target="_blank" class="text-600">@ Beijing Institute of Genomics, CAS.</a>
+			  </p>
+        </div>
+        <div class="col-lg-4 text-lg-right order-lg-2 mt-2 mt-lg-0">
+          <p class="fs--1 text-uppercase ls font-weight-bold mb-0" align="center">Made with<span
+              class="text-danger fas fa-heart mx-1"></span>by <a class="text-600"
+              href="/team/">Wang lab team</a></p>
+            <p class="fs--1 text-uppercase ls font-weight-bold mb-0" align="center">
+				<a href="http://beian.miit.gov.cn/" target="_blank" class="text-600">京ICP备2021031744号</a>				
+			</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!--===============================================-->
+  <!--    Modal for language selection-->
+  <!--===============================================-->
+  <!-- Modal-->
+  <div class="modal fade fade-in" id="languageModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xs mx-auto" role="document">
+      <div class="modal-content bg-black">
+        <div class="modal-body text-center p-0"><button
+            class="close text-white position-absolute t-0 r-0 times-icon mt-2 mr-2 p-2" type="button"
+            data-dismiss="modal" aria-label="Close"></button>
+          <ul class="list-unstyled pl-0 my-0 py-4 text-sans-serif">
+            <li><a class="text-white font-weight-bold pt-1 d-block" href="home-default.html">English</a></li>
+            <li><a class="pt-1 d-block text-500" href="#">Français</a></li>
+            <li><a class="text-500 pt-1 d-block" href="page-rtl.html">عربى</a></li>
+            <li><a class="pt-1 d-block text-500" href="#">Deutsche</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+    <script>
+        var base_url = "..",
+            shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+
+        function jump(e) {
+          let url = e.target.dataset.url;
+          if(!url) return;
+          
+          location.href = url;
+        }
+		
+		// comments out below two by wavefancy@gmail.com
+        //document.getElementById('prev').addEventListener('click',jump);
+        //document.getElementById('next').addEventListener('click',jump);
+    </script>
+    <!--wavefancy@gmail.com-->
+    <!--<script src="../js/base.js" defer></script>-->
+    <script src="../search/main.js" defer></script>
+  <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+  <!-- ===============================================-->
+  <!--    JavaScripts-->
+  <!-- ===============================================-->
+ 
+	  <script src="/pages/assets/js/jquery.min.js"></script>
+	
+	  <script src="/pages/assets/js/bootstrap.js"></script>
+	  <!--plugin is a must have js file-->
+	  <script src="/pages/assets/js/plugins.min.js"></script>
+	  
+	  <script src="/pages/assets/lib/loaders.css/loaders.css.js"></script>
+	  <script src="/pages/assets/js/stickyfill.min.js"></script>
+	  <script src="/pages/assets/lib/is_js/is.min.js"></script>
+	  <script src="/pages/assets/lib/jtap/jquery.tap.js"></script>
+	  <script src="/pages/assets/js/rellax.min.js"></script>
+	  <script src="/pages/assets/lib/fancybox/jquery.fancybox.min.js"></script>
+	  <script src="/pages/assets/lib/isotope-layout/isotope.pkgd.min.js"></script>
+	  <script src="/pages/assets/lib/isotope-packery/packery-mode.pkgd.min.js"></script>
+	  <script src="/pages/assets/js/theme.js"></script>
+	  <!--wavefancy@gmail.com-->
+	  <!--<script src="../js/base.js"></script>-->
+	  <!--
+	  <script src="/pages/assets/js/popper.min.js"></script>
+	  <script src="/pages/assets/lib/lightbox2/js/lightbox.min.js"></script>
+	  <script src="/pages/assets/js/progressbar.min.js"></script>
+	  -->
+	  
+	  <script src="/pages/assets/lib/owl.carousel/owl.carousel.js"></script>
+<!--	  <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.6.15/browser-polyfill.min.js"></script>-->
+	  <script src="/js/browser/browser-polyfill.min.js"></script>
+	  <script src="/pages/assets/js/typed.js"></script>
+	  
+	  <script src="https://map.qq.com/api/gljs?v=1.exp&key=OM5BZ-54JK3-IXD3U-YML7K-TQKZK-RLBNC"></script>
+</body>
+
+</html>
