@@ -52,9 +52,6 @@
       background-color: #000;
       border-color: #000;
     }
-    .notShow{
-      display: none;
-    }
   </style>
 	<!--This two was missed in base-->
     <link href="../pages/assets/lib/owl.carousel/owl.carousel.css" rel="stylesheet">
@@ -182,6 +179,14 @@
           </li>
           
           
+          
+          <li class=" fancynav-item">
+            <a class="fancynav-link" href="../Blog/blog/">
+              <span class="fancynav-link-content">Blog</span>
+            </a>
+          </li>
+          
+          
         
       </ul>
     </div>
@@ -195,7 +200,7 @@
   <!--    Main Content-->
   <!-- ===============================================-->
 
-  <main class="main min-vh-100" id="top" style="min-height: 97rem !important;">
+  <main class="main min-vh-100" id="top" style="min-height: 138vh !important;">
     <!-- <section> begin ============================-->
     
 
@@ -234,10 +239,10 @@
       </section><!-- <section> close ============================-->
       <!-- ============================================-->
       
-
-      <section class="mt-1 mt-lg-0 pb-lg-7 pt-3" id="page-publicatons">
+      <!-- ============================================-->
+      <!-- <section> begin ============================-->
+      <section class="py-0">
         <div class="container">
-          
           <div class="sortable min-vh-100" data-options='{"layoutMode":"packery"}'>
             <div class="menu mb-2">
               <div class="item" data-filter="*" style="display: none;">all</div>
@@ -351,7 +356,14 @@
             </div>
           </div>
         </div><!-- end of .container-->
-      </section>
+      </section><!-- <section> close ============================-->
+      <!-- ============================================-->
+      <script>
+        function rmNotShow(val){
+          $("."+val).removeClass("notShow")
+        }
+      </script>
+
     
 
   </main><!-- ===============================================-->
@@ -429,6 +441,9 @@
     </script>
     <!--wavefancy@gmail.com-->
     <!--<script src="../js/base.js" defer></script>-->
+    <script src="../javascripts/mathjax.js" defer></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" defer></script>
     <script src="../search/main.js" defer></script>
   <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
@@ -527,11 +542,6 @@
 	  <script src="/pages/assets/js/typed.js"></script>
 	  
 	  <script src="https://map.qq.com/api/gljs?v=1.exp&key=OM5BZ-54JK3-IXD3U-YML7K-TQKZK-RLBNC"></script>
-    <script>
-      function rmNotShow(val){
-        $("."+val).removeClass("notShow")
-      }
-    </script>
 </body>
 
 </html>
