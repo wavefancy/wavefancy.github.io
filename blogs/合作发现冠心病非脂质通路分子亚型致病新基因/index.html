@@ -9,7 +9,7 @@
   <!-- ===============================================-->
   <!--    Document Title-->
   <!-- ===============================================-->
-    <title>蒙特卡洛（Markov Chain & Monte Carlo, MCMC）方法 - Wang Lab</title>
+    <title>北京基因组所（国家生物信息中心）合作发现冠心病非脂质通路分子亚型致病新基因 - Wang Lab</title>
 
   <!-- ===============================================-->
   <!--    Favicons-->
@@ -243,123 +243,18 @@
           <div class="container">
                     <div class="row">
                               <div class="col-lg-8">
-                                        <h1 id="markov-chain-monte-carlo-mcmc">蒙特卡洛（Markov Chain &amp; Monte Carlo, MCMC）方法</h1>
-<blockquote>
-<p>作者：YJLAugus  博客： https://www.cnblogs.com/yjlaugus 项目地址：https://github.com/YJLAugus/Reinforcement-Learning-Notes，如果感觉对您有所帮助，烦请点个⭐Star。</p>
-</blockquote>
-<h2 id="_1">背景介绍</h2>
-<p>20世纪40年代，在John von Neumann，Stanislaw Ulam 和 Nicholas Metropolis 在洛斯阿拉莫斯国家实验室为核武器计划工作时，发明了蒙特卡罗方法。因为Ulam的叔叔经常在蒙特卡洛赌场输钱得名，而蒙特卡罗方法正是以概率为基础的方法。</p>
-<p>蒙特卡洛是摩纳哥的一个小城，蒙特卡洛是<a href="https://baike.baidu.com/item/摩纳哥/127488">摩纳哥</a>公国的一座城市，位于欧洲<a href="https://baike.baidu.com/item/地中海/11515">地中海</a>之滨、<a href="https://baike.baidu.com/item/法国/1173384">法国</a>的东南方，属于一个版图很小的国家<a href="https://baike.baidu.com/item/摩纳哥公国/4428850">摩纳哥公国</a>，世人称之为“赌博之国”、“袖珍之国”、“邮票小国” ， 很漂亮的一座小城。</p>
-<p><img alt="" src="https://raw.githubusercontent.com/zhaohongqiangsoliva/zhaohongqiangsoliva.github.io/master/_posts/img/MonteCarlo.jpg" /></p>
-<h2 id="_2">算法介绍</h2>
-<ul>
-<li>
-<p>不是 “蒙特卡洛” 发明的，“蒙特卡洛”仅仅是一个城市的名字。由冯·诺依曼、乌拉姆等人发明。这是基于概率的方法的一个统称。</p>
-</li>
-<li>
-<p>常于拉斯维加斯（Las Vegas）方法比较。两种方法各有侧重点：</p>
-</li>
-</ul>
-<p>蒙特卡洛（Monte Carlo）：民意调查——抽样，并估算到最优解。采样越多，越近似最优解。</p>
-<p>拉斯维加斯（Las Vegas）：找人——必须要精确到找到那个人。采样越多，越有机会找到最优解。</p>
-<ul>
-<li>相关算法：</li>
-</ul>
-<p>蒙特卡洛算法、蒙特卡洛模拟、蒙特卡洛过程、蒙特卡洛搜索树（AlphaGo就是基于此算法）</p>
-<h3 id="_3">工作原理</h3>
-<p>不断抽样（近似采样），逐渐逼近最优解。</p>
-<h3 id="_4">为什么要采样（采样动机）？</h3>
-<ul>
-<li>采样本身就是常见的任务：机器学习中，产生一堆样本，然后进行采样分析。</li>
-<li><code>求和</code>或者是<code>求积分</code>的运算（比如下面的例子）。</li>
-</ul>
-<h3 id="_5">假定已经采样完毕，那么什么是好的样本？</h3>
-<ul>
-<li>样本趋向于高概率区域（同时兼顾其他区域）：红色球区域</li>
-<li>样本与样本之间相互独立： 也就是说 在下图红色球最密集区域的球不能有相互联系，不然依然是采样失败的，不能算好的样本。</li>
-</ul>
-<p>如下图的概率密度函数图所示，只有样本落在高概率的区域，越集中的样本才算是好的样本（红色球），相反的，绿色球样本就不算是好的样本</p>
-<p><img alt="" src="https://raw.githubusercontent.com/zhaohongqiangsoliva/zhaohongqiangsoliva.github.io/master/_posts/img/mtclpf.svg" /></p>
-<h3 id="_6">一个例子</h3>
-<p>利用蒙特卡洛方法计算圆周率<code>pi</code> 。如下图所示：</p>
-<p><img src="https://raw.githubusercontent.com/zhaohongqiangsoliva/zhaohongqiangsoliva.github.io/master/_posts/img/pi.png" style="zoom: 67%;" /></p>
-<p>从上面可得，扇形的面积<span class="arithmatex">\(S_扇 = \pi·1^2·1 ·\frac{1}{4}=\frac{\pi}{4}\)</span>。正方形的面积为<span class="arithmatex">\(S_方 = 1\)</span> ，可得：一个关系如下：
-$$
-\frac {扇形面积}{正方形面积} = \frac{\pi}{4}
-$$</p>
-<p>接下来，如果在下面的图中随机<strong>打点</strong>，那么点落在绿色扇形区域的概率就是<span class="arithmatex">\(P = \frac {扇形面积}{正方形面积} = \frac{\pi}{4}\)</span> ，并最终得到 <span class="arithmatex">\(\pi = 4P\)</span></p>
-<p><img alt="image-20201208140817233" src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20201208140817233.png" /></p>
-<p>在程序中实现我们的算法：可以发现，随着样本空间的增加，利用蒙特卡洛算法得到<span class="arithmatex">\(\pi\)</span> 的值越接近真实的<span class="arithmatex">\(\pi\)</span> 值。</p>
-<pre><code class="language-python">import random
-total = 1000000
-in_count = 0
-
-for i in range(total):
-    x = random.random()
-    y = random.random()
-
-    dis = (x ** 2 + y ** 2) ** 0.5
-
-    if dis &lt;= 1:
-        in_count += 1
-print('Π是:', 4*in_count/total)
-
-# PI = 概率 * 4
-# 5       Π是: 4.0
-# 100     Π是: 3.28
-# 1000    Π是: 3.244
-# 10000   Π是: 3.1524
-# 100000  Π是: 3.15212
-# 1000000 Π是: 3.141696
-</code></pre>
-<h2 id="_7">简单应用</h2>
-<p>现在进行一个简单的应用，对于上面的规则形状，我们可以很方便的计算出图像的面积，但是对于不规则的图形，就不是那么容易求得了，这里就用蒙特卡洛方法进行计算不规则图形的面积。如下图，如果我们计算图中白色区域的面积，该如何去求得呢？</p>
-<p><img alt="image-20201208192324680" src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20201208192324680.png" /></p>
-<p>根据，蒙特卡洛方法，我们还是采用“打点”的方式，总点数为 <code>total_count</code> ，在白色区域的点数为<code>in_count</code>。那么点落在白色区域的概率就是 <code>in_count/total_count</code>，最后用这个概率乘以整张图的面积，就可以大概的估算出白色区域的面积，代码如下：</p>
-<pre><code class="language-python">from PIL import  Image
-import random
-
-img = Image.open('panda.jpg')
-
-# 2. 获取像素的颜色
-total_count = 1000000
-in_count = 0
-
-for i in range(total_count):
-    x = random.randint(0, img.width-1)
-    y = random.randint(0, img.height-1)
-    # color = img.getpixel((x, y))
-    # print(color)
-    if img.getpixel((x, y)) == (255, 255, 255):
-        in_count += 1
-p = in_count/total_count
-print(int(img.width*img.height * p))
-# 20        132240
-# 100       143811
-# 1000      131744
-# 10000     130388
-# 100000    130739
-# 1000000   130699
-# 1.图片读取
-</code></pre>
-<p>接下来进行一个准确的遍历。也就是白色区域的真正的面积值，可以发现，和上面的几乎一致，利用蒙特卡洛算法得到的是 130699，准确的数据是130686， 相差无几。</p>
-<pre><code class="language-python"># right: 130686
-# 1.图片读取
-from PIL import  Image
-import random
-
-img = Image.open('panda.jpg')
-
-# 2. 获取像素的颜色
-count = 0
-for x in range(img.width):
-    for y in range(img.height):
-        if (255, 255, 255) == img.getpixel((x,y)):
-            count += 1
-print(count)
-</code></pre>
-<h2 id="_8">参考文献</h2>
-<p>https://www.bilibili.com/video/BV1Gs411g7EJ?t=1690</p>
+                                        <h1 id="_1">北京基因组所（国家生物信息中心）合作发现冠心病非脂质通路分子亚型致病新基因</h1>
+<p>冠心病是严重危害人类健康的常见心血管疾病，也是导致全球人类死亡的主要原因之一。这一疾病受基因组常见变异和罕见变异的共同复杂影响，遗传因素对疾病的作用程度约为50%~70%。解析冠心病发生背后的遗传基础和机制，是依据基因组医学对疾病进行精准分型，进而依据遗传致病因素对疾病进行个性化治疗的基础。随着测序技术的快速发展和成本的降低，大规模人群测序数据的产生使得深入解析冠心病遗传基础成为可能。</p>
+<p>为进一步识别冠心病相关致病基因以及开展基于基因遗传信息的疾病风险预测，北京基因组研究所（国家生物信息中心）汪敏先研究组与博德研究所（Broad Institute of MIT and Harvard）Amit V. Khera研究组展开合作研究，基于4.1万例冠心病患者和21.7万例对照组的全外显子组基因测序数据和心血管疾病相关临床风险因素等疾病电子病历数据，开展基于基因编码区功能变异的关联富集分析（图1），发现内皮一氧化氮合成酶基因（NOS3）为冠心病的非脂质分子亚型。相关研究成果以“Gene Sequencing Identifies Perturbation in Nitric Oxide Signaling as a Nonlipid Molecular Subtype of Coronary Artery Disease”为题在国际期刊Circulation: Genomic and Precision Medicine发表。</p>
+<p>该研究基于超大规模的样本量更加有效地检测出基因编码区上的罕见变异，这些编码蛋白质的罕见变异能够改变蛋白质表达、结构或功能，对疾病风险产生较大影响。同时，该研究将位于同一个基因上的所有罕见变异根据功能影响类型聚为一个集合，比较该基因上的变异总频率在患病组和对照组之间的差异（图1），该方法能够高效分析基因与疾病表型之间的因果关系，克服了传统关联分析研究（GWAS）虽能定位基因组区域，但无法精确定位致病基因的缺点，从而为下游实验机制验证及药物开发提供了遗传机制明晰的靶点。</p>
+<p><img alt="Alt text" src="http://www.big.cas.cn/xwdt/tpxw/202306/W020230628380752599608.jpg" /></p>
+<p>图1. 通过分析基因编码区功能变异富集差异发现致病风险基因的流程示意图</p>
+<p>该研究鉴定出低密度脂蛋白受体基因（LDLR，与低密度脂蛋白胆固醇代谢相关）的罕见变异与冠心病最密切相关（图2）。在0.34%的对照组中发现LDLR变异，然而在0.91%的冠心病患者中发现了LDLR变异，矫正年龄、性别等混杂因素的影响后，携带者的患病风险增加了4.4倍。同时，该研究还发现了一种与LDLR不同的非脂质分子亚型，即与内皮一氧化氮合成酶基因（NOS3）相关的遗传变异，是冠心病风险的另一个非常重要的驱动因素（图2），0.59%的冠心病患者存在NOS3变异，对照组为0.41%，矫正混杂因素后，基因变异携带者的患病风险增加了约2.4倍。利用中间分子表型对疾病致病的机制解析表明，NOS3主要通过影响血压增加冠心病风险，与传统的血脂相关通路无显著相关性。</p>
+<p>该研究由中科院北京基因组研究所（国家生物信息中心）、博德研究所（Broad Institute of MIT and Harvard）、哈佛大学医学院、美国麻省总院等机构合作完成。博德研究所Amit V. Khera教授与北京基因组研究所（国家生物信息中心）汪敏先研究员为并列第一作者，博德研究所Amit V. Khera教授为本研究的通讯作者。</p>
+<p>为进一步增加该研究方法的统计效力，合作研究团队正在对近5万冠心病患者及近51万的对照数据进行新一轮升级分析，从增大样本量和构建分析新方法、新工具等多个维度，提升发现致病新基因的能力。同时，研究组希望和更多单位开展合作，共同推进对冠心病等心脑血管疾病遗传基础和机制的研究，促进对心脑血管疾病的精准干预和个性化治疗。</p>
+<p><img alt="Alt text" src="http://www.big.cas.cn/xwdt/tpxw/202306/W020230628380753413561.jpg" /></p>
+<p>图2. 依据基因突变在疾病与对照组间的富集差异程度排序的基因列表。红色虚线表示全基因组显著水平，P Value = 2.5x10-6</p>
+<p>https://www.ahajournals.org/doi/full/10.1161/CIRCGEN.121.003598#d9222901e479</p>
                                         <!-- <div class="row">
                                                   <div class="col-12">
                                                             <div class="row">
